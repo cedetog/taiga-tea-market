@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Учебный интернет-магазин натурального чая и травяных сборов Таёжный чай">
+  <title>Таёжный чай — натуральные сборы Сибири</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Таёжный чай, на главную">
+      <span class="brand-mark" aria-hidden="true">Т</span>
+      <span>Таёжный чай</span>
+    </a>
+    <nav class="main-nav" aria-label="Основная навигация">
+      <a href="#home">Главная</a>
+      <a href="#catalog">Каталог</a>
+      <a href="#about">О магазине</a>
+      <a href="#delivery">Доставка</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <button class="cart-button" id="cartButton" type="button" aria-label="Открыть корзину">
+      Корзина <span id="cartCount">0</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">Собрано в Сибири</p>
+        <h1>Чай, в котором слышен лес</h1>
+        <p class="hero-text">Иван-чай, ягоды и травы из экологически чистых районов Прибайкалья. Небольшие партии, ручная сортировка и понятный состав.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#catalog">Выбрать сбор</a>
+          <a class="button secondary" href="#about">Как мы работаем</a>
+        </div>
+        <dl class="hero-facts">
+          <div><dt>6</dt><dd>авторских сборов</dd></div>
+          <div><dt>0</dt><dd>ароматизаторов</dd></div>
+          <div><dt>48 ч</dt><dd>на отправку</dd></div>
+        </dl>
+      </div>
+      <div class="hero-art" aria-label="Упаковка таёжного чая среди лесных трав">
+        <span class="sun"></span>
+        <span class="ridge ridge-one"></span>
+        <span class="ridge ridge-two"></span>
+        <div class="tea-pack">
+          <span class="pack-leaf">⌁</span>
+          <strong>ТАЁЖНЫЙ</strong>
+          <small>ИВАН-ЧАЙ</small>
+          <em>100 г</em>
+        </div>
+        <span class="sprig sprig-one"></span>
+        <span class="sprig sprig-two"></span>
+      </div>
+    </section>
+
+    <section class="section catalog" id="catalog">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Каталог</p>
+          <h2>Сборы для разных состояний</h2>
+        </div>
+        <p>Каждый состав рассчитан на чайник 500–700 мл. Указанная цена относится к упаковке 100 г.</p>
+      </div>
+      <div class="filters" role="group" aria-label="Фильтр товаров">
+        <button class="filter active" type="button" data-filter="all">Все</button>
+        <button class="filter" type="button" data-filter="classic">Классические</button>
+        <button class="filter" type="button" data-filter="berry">Ягодные</button>
+        <button class="filter" type="button" data-filter="herbal">Травяные</button>
+      </div>
+      <div class="product-grid">
+        <article class="product" data-category="classic">
+          <div class="product-art art-cedar"><span>Иван-чай</span></div>
+          <div class="product-body"><p class="tag">Классический</p><h3>Кедровый берег</h3><p>Ферментированный кипрей, кедровая хвоя и лист смородины.</p><div class="product-footer"><strong>490 ₽</strong><button class="add" data-name="Кедровый берег" data-price="490">В корзину</button></div></div>
+        </article>
+        <article class="product" data-category="berry">
+          <div class="product-art art-lingon"><span>Брусника</span></div>
+          <div class="product-body"><p class="tag">Ягодный</p><h3>Брусничный склон</h3><p>Кипрей, ягоды и лист брусники, шиповник и чабрец.</p><div class="product-footer"><strong>560 ₽</strong><button class="add" data-name="Брусничный склон" data-price="560">В корзину</button></div></div>
+        </article>
+        <article class="product" data-category="herbal">
+          <div class="product-art art-meadow"><span>Мята</span></div>
+          <div class="product-body"><p class="tag">Травяной</p><h3>Тихий вечер</h3><p>Мята, мелисса, душица, ромашка и лист малины.</p><div class="product-footer"><strong>520 ₽</strong><button class="add" data-name="Тихий вечер" data-price="520">В корзину</button></div></div>
+        </article>
+        <article class="product" data-category="berry">
+          <div class="product-art art-seaberry"><span>Облепиха</span></div>
+          <div class="product-body"><p class="tag">Ягодный</p><h3>Солнечная тропа</h3><p>Облепиха, яблоко, кипрей, апельсиновая цедра и имбирь.</p><div class="product-footer"><strong>590 ₽</strong><button class="add" data-name="Солнечная тропа" data-price="590">В корзину</button></div></div>
+        </article>
+        <article class="product" data-category="classic">
+          <div class="product-art art-smoke"><span>Кипрей</span></div>
+          <div class="product-body"><p class="tag">Классический</p><h3>Дым над Ангарой</h3><p>Крупнолистовой кипрей глубокой ферментации с лёгкой дымной нотой.</p><div class="product-footer"><strong>470 ₽</strong><button class="add" data-name="Дым над Ангарой" data-price="470">В корзину</button></div></div>
+        </article>
+        <article class="product" data-category="herbal">
+          <div class="product-art art-taiga"><span>Травы</span></div>
+          <div class="product-body"><p class="tag">Травяной</p><h3>Таёжное дыхание</h3><p>Саган-дайля, чабрец, кипрей и можжевеловая ягода.</p><div class="product-footer"><strong>610 ₽</strong><button class="add" data-name="Таёжное дыхание" data-price="610">В корзину</button></div></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section story" id="about">
+      <div class="story-visual">
+        <div class="story-card"><span>52°</span><small>северной широты</small></div>
+      </div>
+      <div class="story-copy">
+        <p class="eyebrow">О магазине</p>
+        <h2>От лесной тропы до вашей чашки</h2>
+        <p>«Таёжный чай» — учебный проект интернет-магазина локальных травяных сборов. Ассортимент построен вокруг сырья, характерного для Прибайкалья: кипрея, листьев лесных ягод, душицы и хвойных компонентов.</p>
+        <ol class="process">
+          <li><span>01</span><div><strong>Сбор</strong><p>Растения заготавливаются в подходящую фазу роста и сортируются вручную.</p></div></li>
+          <li><span>02</span><div><strong>Ферментация</strong><p>Кипрей проходит контролируемое окисление для мягкого вкуса и аромата.</p></div></li>
+          <li><span>03</span><div><strong>Упаковка</strong><p>Смеси фасуются небольшими партиями в пакеты с внутренним барьерным слоем.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section delivery" id="delivery">
+      <div class="section-heading">
+        <div><p class="eyebrow">Доставка</p><h2>Получение заказа</h2></div>
+        <p>Учебный макет показывает сценарий выбора и формирования корзины. Оплата на сайте не проводится.</p>
+      </div>
+      <div class="delivery-grid">
+        <article><span>01</span><h3>Добавьте товары</h3><p>Выберите сборы в каталоге и проверьте состав заказа в корзине.</p></article>
+        <article><span>02</span><h3>Укажите способ связи</h3><p>В рабочей версии менеджер уточняет адрес, дату и удобный вариант доставки.</p></article>
+        <article><span>03</span><h3>Получите посылку</h3><p>Предполагаемый срок передачи заказа в службу доставки — до 48 часов.</p></article>
+      </div>
+    </section>
+
+    <section class="section contacts" id="contacts">
+      <div>
+        <p class="eyebrow">Контакты</p>
+        <h2>Есть вопрос о составе?</h2>
+        <p>Напишите нам — ответим по ассортименту, завариванию и условиям доставки.</p>
+      </div>
+      <div class="contact-list">
+        <a href="mailto:hello@example.com"><span>Почта</span>hello@example.com</a>
+        <a href="tel:+70000000000"><span>Телефон</span>+7 000 000-00-00</a>
+        <p><span>Режим работы</span>ежедневно, 09:00–19:00</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand" href="#home"><span class="brand-mark">Т</span><span>Таёжный чай</span></a>
+    <p>Учебный проект. Не является публичной офертой.</p>
+    <p>© 2026</p>
+  </footer>
+
+  <dialog id="cartDialog">
+    <div class="dialog-head"><h2>Корзина</h2><button id="closeCart" aria-label="Закрыть корзину">×</button></div>
+    <div id="cartItems" class="cart-items"><p class="empty">Корзина пока пуста.</p></div>
+    <div class="cart-total"><span>Итого</span><strong id="cartTotal">0 ₽</strong></div>
+    <button class="button primary checkout" id="checkout" type="button">Сформировать заказ</button>
+    <p class="demo-note" id="demoNote">Демонстрационный режим: данные не отправляются и оплата не производится.</p>
+  </dialog>
+  <script src="script.js"></script>
+</body>
+</html>
